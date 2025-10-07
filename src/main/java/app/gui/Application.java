@@ -397,6 +397,5 @@ public class Application {
         theCard.add(leaveTeamButton);
         theCard.add(resultLabel);
         return theCard;
-
     }
 }
