@@ -329,7 +329,7 @@ public class Application {
         // make a separate line.
         final JButton getAverageButton = new JButton("Get Average Grade");
         // TODO Task 4: Add another button for "Get Top Grade" (check the getAverageButton for example)
-        final JButton getTopGrade = new JButton("Get Top Grade");
+        final JButton getTopButton = new JButton("Get Top Grade");
 
         final JButton leaveTeamButton = new JButton("Leave Team");
         final JLabel resultLabel = new JLabel();
@@ -356,7 +356,7 @@ public class Application {
         });
 
         // TODO Task 4: Add action listener for getTopGrade button, follow example of getAverageButton
-        getTopGrade.addActionListener(new ActionListener() {
+        getTopButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 final String course = courseField.getText();
@@ -393,6 +393,7 @@ public class Application {
         theCard.add(new JLabel("The course you want to calculate the team average for:"));
         theCard.add(courseField);
         theCard.add(getAverageButton);
+        theCard.add(getTopButton);
         theCard.add(leaveTeamButton);
         theCard.add(resultLabel);
         return theCard;
